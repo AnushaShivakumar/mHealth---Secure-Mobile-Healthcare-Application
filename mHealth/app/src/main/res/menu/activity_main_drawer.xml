@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav_menu_group_top">
+        <item
+            android:id="@+id/nav_menu_account"
+            android:icon="@drawable/menu_account_24"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_menu_medical"
+            android:icon="@drawable/menu_medical_24"
+            android:title="Medical History" />
+        <item
+            android:id="@+id/nav_menu_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_menu_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_menu_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav_menu_group_bottom">
+        <item
+            android:id="@+id/nav_menu_logout"
+            android:icon="@drawable/menu_logout_24"
+            android:title="Logout" />
+    </group>
+
+</menu>

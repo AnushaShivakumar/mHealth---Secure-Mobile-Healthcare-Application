@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical History"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- General Information -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: Zari"/>
+
+            <TextView
+                android:id="@+id/dobTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth: 1998-07-21"/>
+
+            <TextView
+                android:id="@+id/occupationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Occupation: Pharmacist"/>
+
+            <TextView
+                android:id="@+id/contactTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact: +1 123-456-7890"/>
+
+            <TextView
+                android:id="@+id/sexTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender: Female"/>
+
+            <TextView
+                android:id="@+id/maritalStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marital Status: Single"/>
+
+            <TextView
+                android:id="@+id/commentsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments: No Known Chronic conditions, generally healthy." />
+
+            <!-- Family Diseases -->
+            <TextView
+                android:text="Family Diseases:"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fatherTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Father: Hypertension"/>
+
+            <TextView
+                android:id="@+id/motherTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mother: Diabetes"/>
+
+            <TextView
+                android:id="@+id/siblingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sibling: None"/>
+
+            <!-- Habits -->
+            <TextView
+                android:text="Habits:"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/alcoholTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alcohol: No"/>
+
+            <TextView
+                android:id="@+id/cannabisTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cannabis: No"/>
+<TextView
+    android:text="Alcohol:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<RadioGroup
+    android:id="@+id/alcoholRadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/alcoholYesRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"/>
+
+    <RadioButton
+        android:id="@+id/alcoholNoRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"/>
+</RadioGroup>
+
+<TextView
+    android:text="Cannabis:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<RadioGroup
+    android:id="@+id/cannabisRadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/cannabisYesRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"/>
+
+    <RadioButton
+        android:id="@+id/cannabisNoRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"/>
+</RadioGroup>
+
+
+            <!-- Past Medical History -->
+            <TextView
+                android:text="Past Medical History:"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/allergyCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allergy"
+                android:checked="true"/>
+
+            <CheckBox
+                android:id="@+id/heartAttackCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Attack"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/rheumaticFeverCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rheumatic Fever"
+                android:checked="true"/>
+
+            <CheckBox
+                android:id="@+id/heartMurmurCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Murmur"
+                android:checked="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

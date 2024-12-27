@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- General Information -->
+  	 <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Record Edit"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/editTextDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth (YYYY-MM-DD)"
+            android:inputType="date" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single" />
+            <RadioButton
+                android:id="@+id/radioMarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married" />
+	<RadioButton
+                android:id="@+id/radioDivorced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divorced" />
+	<RadioButton
+                android:id="@+id/radioWidowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Widowed" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Occupation" />
+
+        <EditText
+            android:id="@+id/editTextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact" />
+
+        <!-- Past Medical History -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Medical History"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAllergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHeartAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Attack" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRheumaticFever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rheumatic Fever" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHeartMurmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Murmur" />
+
+        <!-- Family Diseases -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Diseases"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextFather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father" />
+
+        <EditText
+            android:id="@+id/editTextMother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mother" />
+
+        <EditText
+            android:id="@+id/editTextSibling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sibling" />
+
+        <!-- Habits -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habits"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alcohol" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioAlcoholYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radioAlcoholNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cannabis" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioCannabisYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radioCannabisNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Other Comments -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+THis is what activity_medical_record.xml has. 

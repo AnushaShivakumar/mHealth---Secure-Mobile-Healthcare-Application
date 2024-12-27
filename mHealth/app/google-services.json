@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "384444028869",
+    "project_id": "mhealth-e4eaa",
+    "storage_bucket": "mhealth-e4eaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384444028869:android:d7196352d837c935bc1dac",
+        "android_client_info": {
+          "package_name": "edu.pitt.lersais.mhealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvb5qtdL152U__msuvMJie3KH4T35ZRmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

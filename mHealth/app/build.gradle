@@ -1,0 +1,42 @@
+
+
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+android {
+    namespace 'edu.pitt.lersais.mhealth'
+    compileSdkVersion 33
+    defaultConfig {
+
+        applicationId "edu.pitt.lersais.mhealth"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+
+    implementation 'com.google.firebase:firebase-database:20.0.5' // or the latest version
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

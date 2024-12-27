@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Prescription Information -->
+        <EditText
+            android:id="@+id/et_prescription_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prescription Name" />
+
+        <EditText
+            android:id="@+id/et_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosage" />
+
+        <EditText
+            android:id="@+id/et_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Frequency" />
+
+        <EditText
+            android:id="@+id/et_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration" />
+
+        <EditText
+            android:id="@+id/et_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Order" />
+
+    </LinearLayout>
+</ScrollView>
